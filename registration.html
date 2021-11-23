@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>
+    HTML FORMS
+</title>
+
+<style>
+    label{
+        width: 100px;
+        display:inline-block;
+        margin: 4px;
+    }
+
+    form{
+        border-radius: 10px;
+        padding: 4px;
+
+    }   
+
+    .Green{
+        background-color: green;
+    }
+    .Blue{
+        background-color: blue;
+    }
+    .Yellow{
+        background-color: yellow;
+    }
+    .Pink{
+        background-color: pink;
+    }
+  
+</style>
+
+</head>
+
+<body>
+    <h1>HTML FORMS</h1>
+    <div id="form">
+        <form>
+            <label>First name:</label>
+            <input type="text" id="first name" name="first name"><br>
+            <label>Middle name:</label>
+            <input type="text" id="middle name" name="middle name" ><br>
+            <label>Family name:</label>
+            <input type="text" id="family name" name="family name" ><br>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender"  >Male
+            <input type="radio" id="female" name="gender"  >Female<br>
+            <label>Email:</label>
+            <input type="email" id="email" name="email" ><br> 
+
+            <label for="home address">Home Address:</label><br>
+            <textarea name="home address" id="home address" cols="30" rows="10" placeholder="Write your home address..."></textarea><br>
+             
+            <h2>Hobbies:</h2>
+             <input type="checkbox" id="computer games" />
+             <label for="Computer games">Computer games</label><br>
+             <input type="checkbox" id="playing music instruments" />
+             <label for="playing music instruments">Playing music instruments</label><br>
+             <input type="checkbox" id="cooking" />
+             <label for="cooking">Cooking</label><br>
+             <input type="checkbox" id="drawing" />
+             <label for="drawing">Drawing</label><br><br>
+
+             <select class="select">
+                 <option disabled selected>Choose your favorite color</option>
+                 <option class="Green">Green</option>
+                 <option class="Blue">Blue</option>
+                 <option class="Yellow">Yellow</option>
+                 <option class="Pink">Pink</option>
+             </select><br><br>
+             <label>Say something about yourself:</label><br>
+             <textarea name="about yourself" id="about yourself" cols="30" rows="10" placeholder="Say something about yourself..."></textarea>
+             <br> <br>
+             <input type="submit" value="Submit the form">
+             <input type="reset" value="Clear button">
+        </form>
+    </div>
+</body>
+
+</html>
